@@ -25,6 +25,6 @@ cc lex.yy.c y.tab.c<br/>
 
 <i>C++ compilation</i><br/>
 lex a.l<br/>
-bison a.y -d<br/>
-g++ lex.yy.c a.tab.c -lfl<br/>
+yacc -d a.y <br/>
+g++ lex.yy.c y.tab.c -lfl<br/>
 ./a.out < [Enter name of your input file]<br/>

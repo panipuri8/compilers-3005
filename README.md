@@ -16,14 +16,14 @@
 
 Some lex-yacc files have been written in C, while some are written in C++. The respective compilations for each language are:
 
-*C compilation*<br/>
+<i>C compilation</i><br/>
 lex a.l<br/>
 yacc -d a.y<br/>
 cc lex.yy.c y.tab.c<br/>
 ./a.out < [Enter name of your input file]<br/>
 
 
-*C++ compilation*<br/>
+<i>C++ compilation</i><br/>
 lex a.l<br/>
 bison a.y -d<br/>
 g++ lex.yy.c a.tab.c -lfl<br/>
